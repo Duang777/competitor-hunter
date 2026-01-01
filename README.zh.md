@@ -83,7 +83,7 @@
 
 在项目根目录创建 `.env` 文件:
 
-```bash
+```env
 # OpenAI API 配置
 OPENAI_API_KEY=your_openai_api_key_here
 OPENAI_BASE_URL=https://api.openai.com/v1  # 可选: 自定义端点
@@ -96,8 +96,9 @@ HEADLESS_MODE=true                          # 调试时设置为 false
 DB_PATH=data/competitors.db                 # SQLite 数据库路径
 ```
 
-> 💡 **提示**: 复制 `.env.example` 到 `.env` 并填写您的值:
-> ```bash
+💡 **提示**: 复制 `.env.example` 到 `.env` 并填写您的值:
+
+```bash
 cp .env.example .env
 ```
 
@@ -107,7 +108,7 @@ cp .env.example .env
 
 ### 分析结果截图
 
-![Notion 定价分析](docs/images/notion-pricing-analysis.png)
+![Notion 定价分析](./docs/images/notion-pricing-analysis.png)
 *Notion 定价页面分析截图*
 
 ### CLI 输出示例

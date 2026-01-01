@@ -83,7 +83,7 @@ The system follows **Hexagonal Architecture** with clear separation of concerns.
 
 Create a `.env` file in the project root:
 
-```bash
+```env
 # OpenAI API Configuration
 OPENAI_API_KEY=your_openai_api_key_here
 OPENAI_BASE_URL=https://api.openai.com/v1  # Optional: for custom endpoints
@@ -96,8 +96,9 @@ HEADLESS_MODE=true                          # Set to false for debugging
 DB_PATH=data/competitors.db                 # SQLite database path
 ```
 
-> 💡 **Tip**: Copy `.env.example` to `.env` and fill in your values:
-> ```bash
+💡 **Tip**: Copy `.env.example` to `.env` and fill in your values:
+
+```bash
 cp .env.example .env
 ```
 
@@ -107,7 +108,8 @@ cp .env.example .env
 
 ### Analysis Results
 
-![Notion Pricing Analysis](docs/images/notion-pricing-analysis.png)
+![Notion Pricing Analysis](./docs/images/notion-pricing-analysis.png)
+
 *Screenshot of Notion pricing page analysis*
 
 ### CLI Output Example
