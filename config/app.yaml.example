@@ -1,0 +1,32 @@
+# Competitor Hunter 应用配置示例
+# 复制此文件为 app.yaml 并修改配置
+
+# OpenAI API 配置
+openai:
+  api_key: "your_openai_api_key_here"
+  base_url: "https://api.openai.com/v1"  # 可选：自定义端点
+  model_name: "gpt-4o"  # 可选：默认为 gpt-4o
+
+# 浏览器配置
+browser:
+  headless_mode: true  # 调试时设置为 false
+  timeout: 30000  # 页面加载超时时间（毫秒）
+  user_agents:  # 随机 User-Agent 列表
+    - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+
+# 数据库配置
+database:
+  path: "data/competitors.db"  # SQLite 数据库路径
+
+# 输出配置
+output:
+  reports_dir: "reports"  # 分析结果保存目录
+  logs_dir: "logs"  # 日志和截图保存目录
+  screenshot_enabled: true  # 是否保存截图
+
+# LLM 提取配置
+extraction:
+  max_tokens: 15000  # 最大 token 数
+  truncate_chars: 60000  # 截断字符数（当内容过长时）
+

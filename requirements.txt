@@ -1,0 +1,18 @@
+# Competitor Hunter - Core Dependencies
+# Generated from pyproject.toml
+# Install with: pip install -r requirements.txt
+
+# Core Dependencies
+mcp>=0.1.0
+langgraph>=0.1.0
+langchain>=0.1.0
+playwright>=1.40.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+html2text>=2024.2.26
+aiosqlite>=0.19.0
+loguru>=0.7.0
+
+# LLM Integration (required for OpenAI API)
+langchain-openai>=0.1.0
+

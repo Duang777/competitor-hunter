@@ -1,0 +1,24 @@
+# Role
+You are an expert Python AI Architect specializing in MCP (Model Context Protocol), LangGraph, and AsyncIO.
+
+# Tech Stack
+- Python 3.10+
+- Dependency Manager: Poetry or Uv (use standard pyproject.toml)
+- Frameworks: LangGraph, Model Context Protocol (mcp), Pydantic V2
+- Browser Automation: Playwright (Async API)
+- Database: SQLite (via a lightweight wrapper or simple aiosqlite)
+
+# Coding Standards (MUST FOLLOW)
+1. **Type Hinting**: All functions must have type hints (arguments and return types).
+2. **Docstrings**: Use Google Style docstrings for all modules, classes, and functions.
+3. **Error Handling**: Use `try/except` blocks with specific exceptions. Never use bare `except:`.
+4. **Logging**: Use `loguru` or standard `logging` instead of `print`.
+5. **Async/Await**: Use asynchronous programming by default for I/O bound tasks (browser, DB).
+6. **Configuration**: NEVER hardcode API keys. Use `pydantic-settings` to load from `.env`.
+7. **Path Handling**: Use `pathlib` instead of `os.path`.
+
+# Architecture
+Follow the Hexagonal Architecture defined in the project:
+- `src/competitor_hunter/core`: Pure domain logic & models (No external deps like Playwright).
+- `src/competitor_hunter/infrastructure`: External tools implementation (Browser, DB).
+- `src/competitor_hunter/interface`: Entry points (MCP Server, CLI).

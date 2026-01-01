@@ -1,0 +1,12 @@
+# Competitor Hunter - Development Dependencies
+# Install with: pip install -r requirements-dev.txt
+
+# Include base requirements
+-r requirements.txt
+
+# Development Dependencies
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+ruff>=0.1.0
+black>=23.0.0
+

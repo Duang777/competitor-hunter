@@ -1,0 +1,14 @@
+{
+  "mcp.servers": {
+    "competitor-hunter": {
+      "command": "D:\\DUAN\\Competitor-Hunter\\venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "src.competitor_hunter.interface.mcp_server.server"
+      ],
+      "cwd": "D:\\DUAN\\Competitor-Hunter"
+    }
+  }
+}
+
+
