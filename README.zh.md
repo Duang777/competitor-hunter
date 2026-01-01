@@ -107,7 +107,7 @@ cp .env.example .env
 
 ### 分析结果截图
 
-![Notion 定价分析](logs/success_www.notion.so_pricing_20260101_133923.png)
+![Notion 定价分析](docs/images/notion-pricing-analysis.png)
 *Notion 定价页面分析截图*
 
 ### CLI 输出示例

@@ -107,7 +107,7 @@ cp .env.example .env
 
 ### Analysis Results
 
-![Notion Pricing Analysis](logs/success_www.notion.so_pricing_20260101_133923.png)
+![Notion Pricing Analysis](docs/images/notion-pricing-analysis.png)
 *Screenshot of Notion pricing page analysis*
 
 ### CLI Output Example
